@@ -1,0 +1,79 @@
+/* Style for the registration form */
+body {
+    background-color: #F1F3F5; /* Soft Gray for background */
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h2 {
+    color: #0077B6; /* Primary Blue for the heading */
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.register-container {
+    background-color: white;
+    border: 1px solid #4E5D6C; /* Steel Gray for container border */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    width: 320px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    margin-bottom: 16px;
+    margin-right: 16px;
+}
+
+label {
+    color: #4E5D6C; /* Steel Gray for label text */
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="password"] {
+    border: 1px solid #89CFF0; /* Sky Blue for input borders */
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #0077B6; /* Primary Blue for focus state */
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 119, 182, 0.4);
+}
+
+.submit-button {
+    background-color: #FF6F61; /* Sunset Orange for submit button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #E65B50; /* Darker orange on hover */
+}
+
+.submit-button:focus {
+    outline: none;
+    box-shadow: 0 0 4px rgba(255, 111, 97, 0.4);
+}

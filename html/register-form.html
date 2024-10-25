@@ -3,21 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Register</title>
+    <link rel="stylesheet" href="../css/register-stylesheet.css">
 </head>
 <body>
 
+
+
 <div class="register-container">
+        
   <form action="/submit" method="post">
-    <div class="">
-
+    <div class="form-input">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="Name" required>
     </div>
+      <div class="form-input">
+          <label for="surname">Surname</label>
+          <input type="text" id="surname" name="Surname" required>
+      </div>
+      <div class="form-input">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="Email" required>
+      </div>
+      <div class="form-input">
+          <label for="password">Password</label>
+          <input type="text" id="password" name="Password" required>
+      </div>
+      <div class="form-input">
+          <label for="confirm-password">Confirm Password</label>
+          <input type="text" id="confirm-password" name="Confirm Password" required>
+      </div>
+      <button type="submit" class="submit-button">Register</button>
   </form>
-</div>
-
-<div class="main-layout">
-  <label>
-
-  </label>
 </div>
 
 </body>
