@@ -8,6 +8,10 @@ body {
     min-height: 100vh;
     margin: 0;
 }
+.register-container {
+    display: flex;
+    align-items: start;
+}
 
 h2 {
     color: #0077B6; /* Primary Blue for the heading */
