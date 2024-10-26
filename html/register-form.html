@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<a href="start-page.html" class="return-to-start">< return</a>
+<script src="../js/register-script.js" defer></script>
 
 <div class="register-container">
 
@@ -15,23 +15,28 @@
       <h2>Register</h2>
     <div class="form-input">
         <label for="name">Name</label>
-        <input type="text" id="name" name="Name" required>
+        <input type="text" id="name" name="name" >
+        <span class="error-message text-error"></span>
     </div>
       <div class="form-input">
           <label for="surname">Surname</label>
-          <input type="text" id="surname" name="Surname" required>
+          <input type="text" id="surname" name="surname" >
+          <span class="error-message text-error"></span>
       </div>
       <div class="form-input">
           <label for="email">Email</label>
-          <input type="text" id="email" name="Email" required>
+          <input type="email" id="email" name="email" >
+          <span class="error-message email-error"></span>
       </div>
       <div class="form-input">
           <label for="password">Password</label>
-          <input type="password" id="password" name="Password" required>
+          <input type="password" id="password" name="password" >
+          <span class="error-message password-message"></span>
       </div>
       <div class="form-input">
           <label for="confirm-password">Confirm Password</label>
-          <input type="password" id="confirm-password" name="Confirm Password" required>
+          <input type="password" id="confirm-password" name="confirm-password" >
+          <span class="error-message password-conf-message"></span>
       </div>
       <button type="submit" class="submit-button">Register</button>
   </form>
