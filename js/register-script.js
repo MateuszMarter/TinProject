@@ -40,6 +40,7 @@ document.addEventListener('submit', function(event) {
 
             if(value.length < 8 && !passwordPattern.test(value)) {
                 errorMessage.textContent = "Password must be 8 characters long, contain uppercase letters, a character and number";
+                event.preventDefault();
             } else
                 errorMessage.textContent = '';
 
