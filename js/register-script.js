@@ -49,6 +49,7 @@ document.addEventListener('submit', function(event) {
 
             if(!(password === confirmPassword)) {
                 errorMessage.textContent = 'Passwords do not match';
+                event.preventDefault();
             }
         }
 
