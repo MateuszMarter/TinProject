@@ -2,6 +2,17 @@
 document.addEventListener('submit', function(event) {
     let inputs = document.querySelectorAll('input');
 
+    let password = document.getElementById('password').value;
+    let confirmPassword = document.getElementById('confirm-password').value;
+    let confirmPasswordError = document.getElementById('confirm-password').nextElementSibling;
+
+    if(password !== confirmPassword) {
+        confirmPasswordError.textContent = 'Passwords do not match';
+        event.preventDefault();
+    } else {
+        confirmPasswordError.textContent = '';
+    }
+
     inputs.forEach(input => {
         let value = input.value.trim();
         let errorMessage = input.nextElementSibling;
@@ -39,5 +50,7 @@ document.addEventListener('submit', function(event) {
                 errorMessage.textContent = 'Passwords do not match';
             }
         }
+
     });
+
 });
