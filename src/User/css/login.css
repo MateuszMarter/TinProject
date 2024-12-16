@@ -1,0 +1,84 @@
+
+/* Dodanie marginesu na górze formularza */
+form {
+    margin-top: 150px; /* Możesz dostosować wartość */
+    background-color: #ffffff;
+    padding: 30px 50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Nagłówek formularza */
+form h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Styl dla etykiet */
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #6b7280;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* Pola input */
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+    transition: border-color 0.2s ease-in-out;
+}
+
+input:focus {
+    outline: none;
+    border-color: #6f63e6;
+    box-shadow: 0 0 4px rgba(111, 99, 230, 0.3);
+}
+
+/* Sekcja błędów */
+.invalid-email,
+.invalid-password {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #e63946;
+}
+
+/* Styl dla kontenerów input */
+.email-input,
+.password-input {
+    margin-bottom: 20px;
+}
+
+/* Styl dla przycisku */
+.submit-button {
+    text-align: center;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #6f63e6;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #5a51c2;
+}
